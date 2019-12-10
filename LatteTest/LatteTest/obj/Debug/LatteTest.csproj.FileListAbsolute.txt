@@ -1,0 +1,11 @@
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\LatteTest.exe.config
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\LatteTest.exe
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\LatteTest.pdb
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\Npgsql.dll
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\Npgsql.xml
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\obj\Debug\LatteTest.csprojAssemblyReference.cache
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\obj\Debug\LatteTest.csproj.CopyComplete
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\obj\Debug\LatteTest.exe
+D:\04.DevWorks\02.Temp\LatteTest\LatteTest\obj\Debug\LatteTest.pdb

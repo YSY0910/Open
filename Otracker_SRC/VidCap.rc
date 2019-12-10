@@ -1,0 +1,239 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 러시아어(러시아) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\VidCap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VidCap.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VidCap.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "VidCap.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // 러시아어(러시아) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIDCAP_DIALOG DIALOGEX 0, 0, 407, 219
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "실시간 침입방지시스템"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PRV_STATIC,"Static",SS_BLACKRECT | SS_NOTIFY | WS_BORDER,171,18,120,91
+    COMBOBOX        IDC_ADAPTORS_COMBO,42,18,90,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "enum",IDC_ENUMADAPTORS_BUTTON,12,17,29,14
+    PUSHBUTTON      "Run",IDC_RUN_BUTTON,12,54,48,24
+    EDITTEXT        IDC_SAMPLEINTERVAL_EDIT,78,36,54,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CAPIMG_STATIC,"Static",SS_BLACKRECT | SS_NOTIFY | WS_BORDER,305,17,166,103
+    LTEXT           "Video output",IDC_VIDINFO_STATIC,300,126,138,8
+    LTEXT           "Capture Rate (ms)",IDC_STATIC1,12,38,66,8
+    CONTROL         "background",IDC_BACKGROUND_RADIO,"Button",BS_AUTORADIOBUTTON,78,54,53,10,WS_EX_RIGHT
+    CONTROL         "start tracking",IDC_TRACKOBJECTS_RADIO,"Button",BS_AUTORADIOBUTTON,72,65,59,10,WS_EX_RIGHT
+    LTEXT           "Status",IDC_STATUS_STATIC,308,109,144,7,0,WS_EX_TRANSPARENT
+    GROUPBOX        "System Control",IDC_STATIC,6,6,156,78
+    GROUPBOX        "Video Source",IDC_STATIC,165,6,132,108
+    GROUPBOX        "Detecting & Tracking",IDC_STATIC,299,6,177,118
+    CONTROL         "",IDC_PIC_SLOGO,"Static",SS_BITMAP,381,228,13,11
+    GROUPBOX        "Settings",IDC_STATIC_SETTINGS,7,152,487,100,WS_GROUP
+    PUSHBUTTON      "보안감시 시작",IDC_BTN_START_SECURE,12,90,120,18
+    LTEXT           "Read Interval (min:500ms)",IDC_STATIC2,15,190,89,8
+    EDITTEXT        IDC_EDIT_SINT,137,189,32,11,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "Object Detect Size",IDC_STATIC3,15,164,66,8
+    GROUPBOX        "sensors",IDC_STATIC,11,177,161,77
+    COMBOBOX        IDC_COMBO_ODSIZE,85,161,87,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "온도 감시값",IDC_STATIC4,15,206,45,8
+    EDITTEXT        IDC_EDIT_TEMP_MIN,92,203,24,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "min",IDC_STATIC,71,206,13,8
+    EDITTEXT        IDC_EDIT_TEMP_MAX,145,204,24,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "max",IDC_STATIC,125,206,15,8
+    LTEXT           "GAS 감시값",IDC_STATIC5,16,223,74,8
+    EDITTEXT        IDC_EDIT_GAS_MAX,130,220,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "화염 감시값",IDC_STATIC6,16,240,74,8
+    EDITTEXT        IDC_EDIT_FLAR_MAX,130,237,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "Image Saving Interval(min: 5 Sec)",IDC_STATIC7,193,214,132,8
+    EDITTEXT        IDC_EDIT_SIMG_INT,323,213,32,11,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "Mail Send Interval(min:7Sec)",IDC_STATIC8,194,177,109,8
+    EDITTEXT        IDC_EDIT_SMAIL_INT,310,175,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "메일송신회수(200회 이하)",IDC_STATIC9,359,179,84,8
+    EDITTEXT        IDC_EDIT_SMAIL_MAX,447,176,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Temperature/Gas/Flar",IDC_STATIC,7,117,198,33
+    LTEXT           "gmail 계정",IDC_STATIC10,194,196,48,8
+    LTEXT           "비번",IDC_STATIC,359,195,20,8
+    EDITTEXT        IDC_EDIT_GMAIL_ACCOUNT,246,192,104,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GMAIL_PWD,383,192,104,14,ES_AUTOHSCROLL
+    LTEXT           "T",IDC_STATIC,14,132,8,8
+    EDITTEXT        IDC_EDIT_TEMP_INFO,27,130,31,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Gas",IDC_STATIC,75,133,13,8
+    EDITTEXT        IDC_EDIT_GAS_INFO,92,130,31,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Flar",IDC_STATIC,138,132,14,8
+    EDITTEXT        IDC_EDIT_FLAR_INFO,156,130,31,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "초기화",IDC_BTN_INIT_SETTINGS,196,237,37,14
+    PUSHBUTTON      "적용",IDC_BTN_SAVE_SETTINGS,235,237,37,14
+    LTEXT           "Alert Count",IDC_STATIC11,194,163,48,8
+    LTEXT           "Object Detect Count",IDC_STATIC12,255,163,66,8
+    LTEXT           "Sensor Detect Count",IDC_STATIC13,385,162,76,8
+    EDITTEXT        IDC_EDIT_COUNT_ODETECT,327,160,24,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_EDIT_COUNT_SENSOR_DETECT,462,160,24,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VIDCAP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_VIDCAP_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\VidCap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
